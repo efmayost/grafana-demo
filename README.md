@@ -272,7 +272,7 @@ order by cast(imonth as decimal)
 To discuss:
 
 - The difference between filtering in the query and Transform Data (transform happening BEFORE visualisation)
-- Value mappings as an easier way tha case/then in sql query
+- Value mappings as an easier way than case/then in sql query
 - The difference between the types of imonth and month and the need for casting for ordering correctly.
 
 3. By weekday (table)
