@@ -40,12 +40,6 @@ curl -sk -u "${USERNAME}:${PASSWORD}" https://localhost:9200/_ingest/pipeline/gt
 }
 EOF
 
-#curl -sk -u "${USERNAME}:${PASSWORD}" https://localhost:9200/_ingest/pipeline/gtd \
-#  -H 'Content-Type: application/json' \
-#  -XPUT \
-#  --data-binary @- << EOF
-#EOF
-
 curl -sk -u "${USERNAME}:${PASSWORD}" "https://localhost:9200/${INDEX_NAME}/_settings" \
   -H 'Content-Type: application/json' \
   -XPUT \
