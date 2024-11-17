@@ -369,6 +369,13 @@ To discuss:
 
 ### Total events - by weapon type
 
+``` infinity
+parse-csv
+| where "weaptype1_txt" in (${weapon:singlequote})
+| project "iyear", "weaptype1_txt"
+| summarize count() by "iyear"
+```
+
 To discuss:
 
 - The repeat option

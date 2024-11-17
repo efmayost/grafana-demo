@@ -17,6 +17,6 @@ services:
       - 3000:3000
     volumes:
       - ./grafana_data:/var/lib/grafana
-
+    user: "1000"
 networks:
   my-network:
